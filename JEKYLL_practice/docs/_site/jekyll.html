@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>我的博客</title>
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+
+      .nav {
+        border-bottom: 1px solid #ccc;
+      }
+
+      .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .nav li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .nav li.current a {
+        background-color: #333;
+        color: #f0f0f0;
+      }
+
+      .content {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: stretch;
+        border-bottom: 1px solid #ccc;
+        background-color: #f0f0f0;
+      }
+
+      .col {
+        padding: 10px;
+        width: 30%;
+        margin-bottom: 20px;
+      }
+
+      .sidebar {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .sidebar section {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <!-- 导航栏链接 -->
+        <ul>
+          <li class="current"><a href="#">首页</a></li>
+          <li><a href="#">博客</a></li>
+          <li><a href="#">关于我</a></li>
+          <li><a href="#">联系我</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col">
+          <h2>博客文章</h2>
+          <ul>
+            <li>
+              <article>
+                <header>
+                  <h3><a href="#">第一篇文章</a></h3>
+                </header>
+                <div>
+                  <p>这是第一篇文章的内容。</p>
+                </div>
+                <footer>
+                  <p>发布于 2023/5/24</p>
+                </footer>
+              </article>
+            </li>
+            <li>
+              <article>
+                <header>
+                  <h3><a href="#">第二篇文章</a></h3>
+                </header>
+                <div>
+                  <p>这是第二篇文章的内容。</p>
+                </div>
+                <footer>
+                  <p>发布于 2023/5/24</p>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>简介</h2>
+          <p>我是一名前端开发工程师，喜欢写博客，分享自己的学习笔记。</p>
+          <h2>标签</h2>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>最新文章</h2>
+          <ul>
+            <li>
+              <article>
+                <header>
+                  <h3><a href="#">第三篇文章</a></h3>
+                </header>
+                <div>
+                  <p>这是第三篇文章的内容。</p>
+                </div>
+                <footer>
+                  <p>发布于 2023/5/24</p>
+                </footer>
+              </article>
+            </li>
+            <li>
+              <article>
+                <header>
+                  <h3><a href="#">第四篇文章</a></h3>
+                </header>
+                <div>
+                  <p>这是第四篇文章的内容。</p>
+                </div>
+                <footer>
+                  <p>发布于 2023/5/24</p>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <section>
+        <h2>关于我</h2>
+        <p>我是一名前端开发工程师，喜欢写博客，分享自己的学习笔记。</p>
+      </section>
+      <section>
+        <h2>标签云</h2>
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer">
+      <p>版权所有 &copy; 2023 我的博客</p>
+    </div>
+  </body>
+</html>
